@@ -1,0 +1,18 @@
+<h1>show page for restaurabnts</h1>
+
+
+
+<p>
+<ul>
+<%= @restaurant.name %>
+<br>
+<%= @restaurant.address %>
+<br>
+
+<h2>Menu</h2>
+<% @restaurant.pizzas.each do |pizza| %>
+<%= link_to pizza.name, pizza_path %>
+<% end %>
+
+</ul>
+</p>

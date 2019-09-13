@@ -8,7 +8,8 @@
 #
 #   1
 Restaurant.destroy_all
- 
+Pizza.destroy_all
+
 Restaurant.create!([{
   name: "Sottocasa NYC",
   address: "298 Atlantic Ave, Brooklyn, NY 11201",
@@ -21,3 +22,31 @@ Restaurant.create!([{
   name: "San Matteo NYC",
   address: "1559 2nd Ave, New York, NY 10028"
 }])
+
+Pizza.create!([{
+  name: "Cheese",
+  ingredients: "cheese"
+},
+{
+  name: "Pepperoni",
+  ingredients: "cheese and pepperoni"
+},
+{
+  name: "Hawaiwan",
+  ingredients: "cheese and ham and pineapple"
+}])
+
+# PizzaRest.create!([{
+#   pizza_id: 8,
+#   restaurant_id: 10
+# },
+# {
+#   pizza_id: 9,
+#   restaurant_id: 11
+# },
+# {
+#   pizza_id: 11,
+#   restaurant_id: 12
+# }])
+
+puts " file is seeded "
