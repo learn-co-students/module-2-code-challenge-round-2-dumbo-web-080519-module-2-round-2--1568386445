@@ -8,7 +8,7 @@
 #
 #   1
 Restaurant.destroy_all
- 
+
 Restaurant.create!([{
   name: "Sottocasa NYC",
   address: "298 Atlantic Ave, Brooklyn, NY 11201",
