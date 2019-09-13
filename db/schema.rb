@@ -13,10 +13,12 @@
 ActiveRecord::Schema.define(version: 20181129144046) do
 
   create_table "pizzas", force: :cascade do |t|
+    t.integer "restaurant_id"
     t.string "name"
     t.string "ingredients"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["restaurant_id"], name: "index_pizzas_on_restaurant_id"
   end
 
   create_table "restaurants", force: :cascade do |t|
